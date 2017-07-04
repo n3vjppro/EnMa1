@@ -74,22 +74,22 @@
 	                <ul class="contact-list">     
 	                  <li id="user1" class="online">
 
-	                  	<a id="one" onclick="load_TableTopEngineer({{ $topEngineer[0]->idEngineer }})"><img alt="" src="{{asset('img/demo/av2.jpg')}}" /> <span>{{ $topEngineer[0]->engineerName }}</span></a><span class="msg-count badge badge-info">1</span>
+	                  	<a id="one" href="#" onclick="load_TableTopEngineer({{ $topEngineer[0]->idEngineer }})"><img alt="" src="{{asset('img/demo/av2.jpg')}}" /> <span>{{ $topEngineer[0]->engineerName }}</span></a><span class="msg-count badge badge-info">1</span>
 	                  </li>
 	                  
-	                  <li id="user2" class="online">
+	                  <li id="user2" href="#" class="online">
 	                  	<a id="two" onclick="load_TableTopEngineer({{ $topEngineer[1]->idEngineer }})"><img alt="" src="{{asset('img/demo/av4.jpg')}}" /> <span>{{ $topEngineer[1]->engineerName }}</span></a><span class="msg-count badge badge-info">2</span>
 	                  </li>
 	                  
-	                  <li id="user3" class="online">
+	                  <li id="user3" href="#" class="online">
 	                  	<a onclick="load_TableTopEngineer({{ $topEngineer[2]->idEngineer }})"><img alt="" src="{{asset('img/demo/av4.jpg')}}" /> <span>{{ $topEngineer[2]->engineerName }}</span></a><span class="msg-count badge badge-info">3</span>
 	                  </li>
 	                  
-	                  <li id="user4" class="online">
+	                  <li id="user4" href="#" class="online">
 	                  	<a onclick="load_TableTopEngineer({{ $topEngineer[3]->idEngineer }})"><img alt="" src="{{asset('img/demo/av1.jpg')}}" /> <span>{{ $topEngineer[3]->engineerName }}</span></a><span class="msg-count badge badge-info">4</span>
 	                  </li>
 	                  
-	                  <li id="user5" class="online">
+	                  <li id="user5" href="#" class="online">
 	                  	<a onclick="load_TableTopEngineer({{ $topEngineer[4]->idEngineer }})"><img alt="" src="{{asset('img/demo/av1.jpg')}}" /> <span>{{ $topEngineer[4]->engineerName }}</span></a><span class="msg-count badge badge-info">5</span>
 	                  </li>
 

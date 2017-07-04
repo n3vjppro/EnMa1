@@ -13,7 +13,7 @@ use App\json;
 class ProjectController extends Controller
 {
     public function IndexPro(){
-    	$Project = Project::all();  
+    	  $Project = Project::all();  
         $_totalTeam = $this->totalTeam();
         $_totalProject = $this->totalProject();
         $_totalEngineer = $this->totalEngineer();

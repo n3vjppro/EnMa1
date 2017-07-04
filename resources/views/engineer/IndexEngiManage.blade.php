@@ -62,7 +62,7 @@
                 <td>{{ $list->engineerName }}</td>
                 <td>{{ $list->Address }}</td>
                 <td>{{ $list->Phone }}</td>
-                <td>{{ $list->Email}}</td>
+                <td>{{ $list->Email }}</td>
                 <td>{{ $list->TechSkill }}</td>
                 <td>{{ $list->Experience }}</td>
                 <td> <a href="EditEngineer" ><i class="icon-edit" style="margin-left: 10px;"></i></a></td>
