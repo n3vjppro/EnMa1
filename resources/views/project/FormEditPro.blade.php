@@ -4,7 +4,7 @@
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="/" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="ProjectManagement" class="tip-bottom">Project Management</a> <a href="#" class="current">Edit Project</a> </div>
-  <h1>UPDATE PROJECT</h1>
+  <h1>Update Project</h1>
 </div>
 
 <?php
@@ -51,13 +51,13 @@ $decoded = json_decode($listPro, true);
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
        
             <div class="control-group">
-              <label class="control-label">idProject:</label>
+              <label class="control-label">Project ID :</label>
               <div class="controls">
                 <input type="text" class="span11" placeholder="idProject" name="idProject" value= "{{ $decoded[0]['idProject'] }}"/>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">projectName :</label>
+              <label class="control-label">Project Name :</label>
               <div class="controls">
                 <input type="text" class="span11" placeholder="projectName" name="projectName" value= "{{ $decoded[0]['projectName'] }} "/>
               </div>
@@ -117,20 +117,20 @@ $decoded = json_decode($listPro, true);
 
 
             <div class="control-group">
-              <label class="control-label">dateOfBegin(dd-mm)</label>
+              <label class="control-label">Date Of Begin :</label>
               <div class="controls">
                 <input type="text"  data-date-format="yyyy-mm-dd" class="datepicker span11" name="dateOfBegin" value= "{{ $decoded[0]['dateOfBegin'] }}" >
                 <span class="help-block">Date with Formate of  (yyyy-mm-dd)</span> </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label">dateOfEnd(dd-mm)</label>
+              <label class="control-label">Date Of End :</label>
               <div class="controls">
                 <input type="text"  data-date-format="yyyy-mm-dd" class="datepicker span11" name="dateOfEnd" value= "{{ $decoded[0]['dateOfEnd'] }}">
                 <span class="help-block">Date with Formate of  (yyyy-mm-dd</span> </div>
             </div>
             <div class="control-group">
-              <label class="control-label">customer_code:</label>
+              <label class="control-label">Customer :</label>
               <div class="controls">
                 <input type="text" class="span11" name= "customer_code" value= "{{ $decoded[0]['customer_code'] }}" />
               </div>
@@ -142,9 +142,10 @@ $decoded = json_decode($listPro, true);
           </form>
         </div>
       </div>
-
-</select>
-</div></div>
+    </div>
+  </div>
+</div>
+</div>
 <script src="{{asset('js/matrix.form_common.js')}}"></script>
 
 @stop
