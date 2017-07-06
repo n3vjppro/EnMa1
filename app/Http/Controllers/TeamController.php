@@ -10,7 +10,11 @@ use Illuminate\Support\Facades\DB;
 
 class TeamController extends Controller
 {
-    //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function IndexTm(){
         $datas = DB::table('Team')->get();
         $_totalTeam = $this->totalTeam();

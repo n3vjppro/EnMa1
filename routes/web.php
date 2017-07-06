@@ -43,8 +43,8 @@ Route::post('/AddProject','ProjectController@postAddPro');
 
 Route::get('/EditProject','ProjectController@EditPro');
 Route::get('/EditProject/{idProject}','ProjectController@EditPro');
-Route::post('/postEditPro/{idProject}','ProjectController@postEditPro');
-
+Route::post('/EditProject/{idProject}','ProjectController@postEditPro');
+Route::get('DelProject/{id}','ProjectController@DelPro');
 
 
 Route::get('/totalEngineer', 'ShowEngiDashboardController@ShowEngineer');
@@ -66,4 +66,5 @@ Route::get('/checkDB', function ()
 });
 
 Auth::routes();
+//Route::get('reset','Auth\ResetPasswordController@showLinkRequest');
 
